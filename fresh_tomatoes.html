@@ -1,0 +1,57 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="extra.css">
+</head>
+<body>
+<div class="center"><h2>Trailers</h2>
+</div>
+<div class="container">
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<iframe width="400" height="300" src="https://www.w3schools.com" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+</div>
+
+<div class="box f1" onclick="onc('eoJxaz3VtuE')">
+
+<img src="/home/vit/Desktop/Html/rose-blue-flower-rose-blooms-67636.jpeg" alt="fig1" vspace="25" hspace="25"  style="width:50%" height=250px ><figcaption><a href="https://en.wikipedia.org/wiki/Blue_rose">Blue Roses</a>
+
+</div>
+<div class="box f2" onclick="onc('Egjmby3wayQ')">
+
+<img src="/home/vit/Desktop/Html/CMS_Creative_164657191_Kingfisher.jpg" alt="fig2" vspace="25" hspace="25" style="width:50%" height=250px><figcaption><a href="https://en.wikipedia.org/wiki/Kingfisher">Kingfishers</a>
+
+</div>
+<div class="box f3" onclick="onc('CKMNMsRaWLI')">
+
+<img src="/home/vit/Desktop/Html/3848765-wallpaper-images-download.jpg" alt="fig3" vspace="25" hspace="25" style="width:50%" height=250px><figcaption><a href="https://en.wikipedia.org/wiki/Pet">Pets</a>
+
+</div>
+<div class="box f4" onclick="onc('XcQqm7LNRFY')">
+
+<img src="/home/vit/Desktop/Html/p1796kl5181r52k84cs99bs2li1.jpg" alt="fig4"vspace="25" hspace="25" style="width:50%"height=250px ><figcaption><a href="https://en.wikipedia.org/wiki/Rabbit">Rabbits</a>
+
+</div>
+<script>
+	var modal=document.getElementById('myModal');
+	var span=document.getElementsByClassName("close")[0];
+	onc=function (c){
+		modal.style.display="block";
+		document.getElementsByTagName("iframe")[0].setAttribute("src",'https://www.youtube.com/embed/'+c);
+}
+span.onclick=function(){
+	modal.style.display="none";
+}
+window.onclick=function(event){
+	if(event.target==modal){
+	modal.style.display="none";
+}
+}
+</script>
+</body>
+</html>
